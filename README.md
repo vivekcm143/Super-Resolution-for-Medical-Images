@@ -1,5 +1,3 @@
-## README.md
-
 ```markdown
 # 🏥 Medical Images Super Resolution
 
@@ -291,3 +289,4 @@ If you use this project in your research, please cite:
 ```
 
 ***
+
