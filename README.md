@@ -1,4 +1,3 @@
-```markdown
 # 🏥 Medical Images Super Resolution
 
 A Streamlit-based web application that enhances the resolution and quality of medical X-ray images using **Swift-SRGAN** (Super-Resolution Generative Adversarial Network). Transform low-resolution medical images into high-quality diagnostic images with state-of-the-art deep learning.
@@ -15,24 +14,24 @@ A Streamlit-based web application that enhances the resolution and quality of me
 
 ## 🏗️ Project Structure
 
-```
 Medical-Image-Super-Resolution/
-├── app.py                      # Main Streamlit application
-├── requirements.txt            # Python dependencies
-├── config.py                   # Configuration settings
+├── app.py # Main Streamlit application
+├── requirements.txt # Python dependencies
+├── config.py # Configuration settings
 ├── components/
-│   ├── home_page.py           # Home page UI component
-│   ├── image_enhancer.py      # Image enhancement examples UI
-│   ├── new_image_enhancer.py  # Custom image upload UI
-│   └── about_us.py            # About page UI
+│ ├── home_page.py # Home page UI component
+│ ├── image_enhancer.py # Image enhancement examples UI
+│ ├── new_image_enhancer.py # Custom image upload UI
+│ └── about_us.py # About page UI
 ├── model/
-│   └── run_inference.py       # Model initialization and inference
+│ └── run_inference.py # Model initialization and inference
 ├── data/
-│   └── val_images.pkl         # Validation image paths
+│ └── val_images.pkl # Validation image paths
 ├── models/
-│   └── [model_weights]        # Trained Swift-SRGAN weights
-└── README.md                  # Documentation
-```
+│ └── [model_weights] # Trained Swift-SRGAN weights
+└── README.md # Documentation
+
+text
 
 ## 🚀 Installation
 
@@ -46,24 +45,24 @@ Medical-Image-Super-Resolution/
 ### Setup Instructions
 
 1. **Clone the repository**
-   ```
-   git clone https://github.com/vivekcm143/Medical-Image-Super-Resolution.git
-   cd Medical-Image-Super-Resolution
-   ```
+git clone https://github.com/vivekcm143/Medical-Image-Super-Resolution.git
+cd Medical-Image-Super-Resolution
+
+text
 
 2. **Install dependencies**
-   ```
-   pip install -r requirements.txt
-   ```
+pip install -r requirements.txt
+
+text
 
 3. **Verify data and model files**
-   - Ensure `data/val_images.pkl` is present
-   - Ensure model weights are in the `models/` directory
+- Ensure `data/val_images.pkl` is present
+- Ensure model weights are in the `models/` directory
 
 4. **Run the application**
-   ```
-   streamlit run app.py
-   ```
+streamlit run app.py
+
+text
 
 The application will open in your default web browser at `http://localhost:8501`
 
@@ -95,52 +94,52 @@ The application will open in your default web browser at `http://localhost:8501`
 #### Key Components:
 
 1. **Generator Network**
-   - Deep residual architecture
-   - Upsampling blocks for resolution increase
-   - Pixel shuffle layers for efficient upscaling
+- Deep residual architecture
+- Upsampling blocks for resolution increase
+- Pixel shuffle layers for efficient upscaling
 
 2. **Discriminator Network**
-   - Adversarial training for realistic outputs
-   - Perceptual loss for detail preservation
+- Adversarial training for realistic outputs
+- Perceptual loss for detail preservation
 
 3. **Loss Functions**
-   - Content Loss: Preserves anatomical structures
-   - Adversarial Loss: Ensures realistic image quality
-   - Perceptual Loss: Maintains visual fidelity
+- Content Loss: Preserves anatomical structures
+- Adversarial Loss: Ensures realistic image quality
+- Perceptual Loss: Maintains visual fidelity
 
 ### Technical Specifications
 
-```
 Input Resolution: Variable (typically 128×128 or 256×256)
 Output Resolution: 4× upscaling (512×512 or 1024×1024)
 Architecture: Swift-SRGAN
 Framework: TensorFlow/PyTorch
 Enhancement Factor: 4×
 Processing Time: <2 seconds per image
-```
+
+text
 
 ## 📊 Performance Metrics
 
 *(Add your model performance metrics)*
 
 Example:
-```
 PSNR (Peak Signal-to-Noise Ratio): 32.5 dB
 SSIM (Structural Similarity Index): 0.92
 Enhancement Factor: 4×
 Average Processing Time: 1.2 seconds
-```
+
+text
 
 ## 🔧 Configuration
 
 Edit `config.py` to customize:
 
-```
-PAGES = ['Home', 'Try Your Own Image', 'About']  # Navigation pages
-MODEL_PATH = 'models/swift_srgan_weights.h5'     # Model weights path
-MAX_IMAGE_SIZE = 2048                             # Maximum input dimension
-ENHANCEMENT_FACTOR = 4                            # Upscaling factor
-```
+PAGES = ['Home', 'Try Your Own Image', 'About'] # Navigation pages
+MODEL_PATH = 'models/swift_srgan_weights.h5' # Model weights path
+MAX_IMAGE_SIZE = 2048 # Maximum input dimension
+ENHANCEMENT_FACTOR = 4 # Upscaling factor
+
+text
 
 ## 📁 Data Format
 
@@ -240,6 +239,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 For questions, collaboration, or feedback:
 - **GitHub Issues**: [Open an issue](https://github.com/vivekcm143/Medical-Image-Super-Resolution/issues)
 - **GitHub Profile**: [@vivekcm143](https://github.com/vivekcm143)
+- **Email**: [Your email if you want to share]
 
 ## 🙏 Acknowledgments
 
@@ -278,15 +278,9 @@ For questions, collaboration, or feedback:
 
 If you use this project in your research, please cite:
 
-```
 @software{medical_image_super_resolution,
-  author = {Vivek C M},
-  title = {Medical Images Super Resolution using Swift-SRGAN},
-  year = {2025},
-  url = {https://github.com/vivekcm143/Medical-Image-Super-Resolution}
+author = {Vivek C M},
+title = {Medical Images Super Resolution using Swift-SRGAN},
+year = {2025},
+url = {https://github.com/vivekcm143/Medical-Image-Super-Resolution}
 }
-```
-```
-
-***
-
