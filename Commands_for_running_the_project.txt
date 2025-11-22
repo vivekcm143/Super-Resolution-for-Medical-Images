@@ -1,0 +1,5 @@
+cd Downloads
+cd Super-Resolution-for-Medical-Images-streamlit-demo
+cd Super-Resolution-for-Medical-Images-streamlit-demo
+conda activate st_demo
+streamlit run streamlit_app.py
